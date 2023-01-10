@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f4ef">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#684c38"
+            android:text="지역을 선택해 주세요"/>
+
+        <ImageView
+            android:layout_width="355dp"
+            android:layout_height="300dp"
+            android:background="@mipmap/seoul_lightgrey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radio_group">
+
+            <RadioButton
+                android:id="@+id/radio_button_bookchon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="165dp"
+                android:text="북촌한옥마을"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_seochon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-35dp"
+                android:layout_marginLeft="115dp"
+                android:text="서촌"
+                android:layoutDirection="rtl"
+                android:textColor="#684c38"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_button_ikseondong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-35dp"
+                android:layout_marginLeft="140dp"
+                android:text="익선동"
+                android:textColor="#684c38"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_daehakro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="190dp"
+                android:text="대학로"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_eulgiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-33dp"
+                android:layout_marginLeft="170dp"
+                android:text="을지로"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_hongdae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="110dp"
+                android:text="홍대"
+                android:textColor="#684c38"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_sangsu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="115dp"
+                android:text="상수"
+                android:textColor="#684c38"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_hannam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="180dp"
+                android:text="한남"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_itaewon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-38dp"
+                android:layout_marginLeft="130dp"
+                android:text="이태원"
+                android:textColor="#684c38"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_gundae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-75dp"
+                android:layout_marginLeft="225dp"
+                android:text="건대뚝섬"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_seoulforest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-35dp"
+                android:layout_marginLeft="210dp"
+                android:text="서울숲성수"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_sinsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="200dp"
+                android:text="신사"
+                android:textColor="#684c38"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_gangnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="210dp"
+                android:text="강남"
+                android:textColor="#684c38"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

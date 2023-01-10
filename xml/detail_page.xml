@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f4ef">
+
+    <ImageButton
+        android:id="@+id/back_step"
+        android:layout_marginTop="33dp"
+        android:elevation="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/hwasal"/>
+
+    <TextView
+        android:layout_marginTop="45.5dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#684c38"
+        android:textSize="15sp"
+        android:text="CAFE"/>
+
+    <ImageButton
+        android:id="@+id/main_btn"
+        android:elevation="6dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#e8dcca"
+        android:elevation="5dp">
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cafeimage"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:background="@mipmap/joonbi"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/instaLink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="315dp"
+                android:layout_marginTop="183dp"
+                android:background="@mipmap/insta" />
+
+            <TextView
+                android:id="@+id/cafename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:textColor="#341d08"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cafecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="277dp"
+                android:textColor="#785a44"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="310dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28sp"
+                    android:layout_height="28sp"
+                    android:layout_gravity="bottom"
+                    android:background="@mipmap/juso" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="주소"
+                    android:textColor="#684c38"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cafeloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="335dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:ellipsize="middle"
+                android:gravity="left"
+                android:onClick="on2"
+                android:textColor="#785a44"
+                android:textSize="13sp" />
+
+            <com.naver.maps.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="380dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="615dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="bottom"
+                    android:background="@mipmap/junhwa" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="전화번호"
+                    android:textColor="#684c38"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cafenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="640dp"
+                android:background="@android:color/transparent"
+                android:onClick="on1"
+                android:textColor="#785a44"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="690dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="bottom"
+                    android:background="@mipmap/hour" />
+
+                <TextView
+                    android:id="@+id/hour_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="운영시간"
+                    android:textColor="#684c38"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hour_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="728dp"
+                android:textColor="#785a44"
+                android:elevation="1dp"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="130dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_custom"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

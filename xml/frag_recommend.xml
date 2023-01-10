@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f4ef">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80dp">
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="한남"
+                android:textColor="#684c38"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="45dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="커피전문점"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="생과일전문점"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="찻집"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_4"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="디저트카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_5"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="키즈카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_6"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문화예술카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_7"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="라이브카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_8"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="북카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_9"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="애견카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_10"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보드게임카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_11"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="드로잉카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_12"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="베이커리카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_13"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="슬라임카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipType_14"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="방탈출카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/horizon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="90dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="루프탑"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="야외"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주류판매"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_4"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="카페대관"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_5"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_6"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="장애시설"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_7"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="놀이방"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_8"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="흡연실"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_9"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수제"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_10"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주차가능"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_11"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="큰길가"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_12"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="단체석"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_13"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시그니처"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_14"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대형카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_15"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남/녀 화장실 구분"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_16"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전망좋은(뷰)"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_17"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="글루텐프리"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_18"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비건"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCharacter_19"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="락토프리"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/horizon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="135dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_1"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="데이트"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="빈티지"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="레트로"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_4"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아기자기한"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_5"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="엔틱한"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_6"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="감성카페"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_7"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조용한"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_8"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모던한"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_9"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자연친화"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_10"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이색적인"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_11"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이국적인"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_12"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="포토존"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_13"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="힐링"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_14"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대화하기 좋은"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_15"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="힙한"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_16"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고급스러운"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood_17"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한국적인"
+                    android:textColor="#341d08"
+                    app:chipBackgroundColor="#e8dcca" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="지역"
+                android:textColor="#684c38"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="종류"
+                android:textColor="#684c38"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="조건"
+                android:textColor="#684c38"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="135dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="분위기"
+                android:textColor="#684c38"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="217dp"
+        android:layout_marginBottom="65dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#e8dcca" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e8dcca"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#e8dcca"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_search"
+                android:layout_centerHorizontal="true"
+                android:text="카페검색"
+                android:textColor="#684c38"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_recommend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/recommend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_recommend"
+                android:layout_centerHorizontal="true"
+                android:text="맞춤추천"
+                android:textColor="#684c38"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_jjim"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/jjim" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_jjim"
+                android:layout_centerHorizontal="true"
+                android:text="찜"
+                android:textColor="#684c38"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_mypage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/mypage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_mypage"
+                android:layout_centerInParent="true"
+                android:text="마이페이지"
+                android:textColor="#684c38"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_main"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/logo" />
+    </RelativeLayout>
+
+</RelativeLayout>
